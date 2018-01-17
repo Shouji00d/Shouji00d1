@@ -1,0 +1,72 @@
+/* 共通の設定--------------------------------------------- */
+/* テーブルはデフォルトで中央寄せ */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Alignの中央寄せ */
+.alignCenter {
+	text-align: center;
+}
+
+/* Alignの左寄せ */
+.alignLeft {
+	text-align: left;
+}
+
+/* marginの左50％ */
+.marginLeft50 {
+	margin-left: 50%;
+}
+
+/* marginの左50％ */
+.errMessage {
+color: red;
+}
+
+/* ログイン画面の設定--------------------------------------- */
+/* テーブルの設定 */
+#loginTable {
+	border: solid 1px;
+	background-color: #fffacd;
+	padding: 4px;
+}
+
+/* 一覧画面の設定----------------------------------------- */
+/* テーブルの設定 */
+#listTable {
+	border: solid 1px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#listTable tr,#listTable td {
+	border: solid 1px;
+}
+
+#listTrColor {
+	background-color: #e6e6fa;
+}
+
+/* 詳細画面の設定----------------------------------------- */
+/* テーブルの設定 */
+#detailTable {
+	border: solid 1px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#detailTable tr,#detailTable td {
+	border: solid 1px;
+}
+
+#detailTrColor {
+	background-color: #e6e6fa;
+}
+
+/* 詳細フォーム送信ボタン用の設定 */
+.detailButton {
+	width: 80px;
+	margin: 0px 12px;
+}
