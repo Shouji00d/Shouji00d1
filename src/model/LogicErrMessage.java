@@ -152,9 +152,6 @@ public class LogicErrMessage {
 		matcher = TIME.matcher(employee.getStrEnterDate());
 		if (employee.getStrEnterDate().equals("")) {
 			errList.add("入社日が未入力です。");
-		} else if (!matcher.find()) {
-			errList.add("入社日の入力値が間違っています。");
-			errList.add("次の形式を使用してください：YYYY/MM/DD");
 		} else {
 			DateFormat format = new SimpleDateFormat("yyyy/MM/dd");
 			try {
@@ -170,9 +167,6 @@ public class LogicErrMessage {
 		matcher = TIME.matcher(employee.getStrRetireDate());
 		if (employee.getStrRetireDate().equals("")) {
 			// 必須ではない為スルーさせる
-		} else if (!matcher.find()) {
-			errList.add("退職日の入力値が間違っています。");
-			errList.add("次の形式を使用してください：YYYY/MM/DD");
 		} else {
 			DateFormat format = new SimpleDateFormat("yyyy/MM/dd");
 			try {
